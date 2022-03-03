@@ -1,0 +1,182 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2022-03-03 09:41:45",
+    "containerVersion": {
+        "path": "accounts/2243251363/containers/8150954/versions/0",
+        "accountId": "2243251363",
+        "containerId": "8150954",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/2243251363/containers/8150954",
+            "accountId": "2243251363",
+            "containerId": "8150954",
+            "name": "www.portal.cz",
+            "publicId": "GTM-KK3GC67",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1646053906269",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2243251363/containers/8150954/workspaces?apiLink=container",
+            "mode": "FULL"
+        },
+        "tag": [
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "tagId": "22",
+                "name": "set lang",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n  var hBDC = new XMLHttpRequest();\n  var bdcApi = 'https://api.bigdatacloud.net/data/client-info';\n  var supportedLangs = ['en', 'de', 'fr', 'es', 'ca_es', 'it', 'sv', 'nl', 'pt', 'fi', 'hu', 'hr', 'cs', 'da', 'ro', 'sk', 'sl', 'pl', 'sr', 'lt', 'lv', 'ru', 'no', 'bg', 'el', 'mk', 'cy', 'ja', 'ar', 'tr', 'oc'];\n  var lang;\n  var outputBDC = {};\n  hBDC.open('GET', bdcApi);\n  hBDC.send();\n  hBDC.onreadystatechange = function () {\n    if (this.readyState == 4 && this.status == 200) {\n      outputBDC = JSON.parse(this.responseText);\n      lang = outputBDC.userLanguages.find(function (_lang) {\n        return supportedLangs.indexOf(_lang) != -1;\n      });\n      var dataLayer = window.dataLayer || [];\n        dataLayer.push({  \n          event: \"langInit\",  \n          lang: lang});\n    }\n  }\n</script>"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1644412708145",
+                "firingTriggerId": [
+                    "2147479553"
+                ],
+                "parentFolderId": "10",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "tagId": "23",
+                "name": "css",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<style>\n\n    #termsfeed-com---nb {\n        position: fixed;\n        bottom: 0;\n        height: min-content;\n        margin-right: auto;\n        margin-left: auto;\n        padding-right: 0;\n        padding-left: 0;\n    }\n\n    #termsfeed-com---nb {\n        background-color: transparent;\n    }\n\n    #termsfeed-com---nb .cc-nb-main-container {\n        background-color: rgba(255, 255, 255, 1);\n\n        box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n        border-radius: 0.25rem;\n    }\n\n    .termsfeed-com---pc-dialog [type=checkbox] {\n        display: none;\n    }\n\n    #termsfeed-com---nb .cc-nb-title {\n        color: #252525;\n    }\n\n    #termsfeed-com---nb .cc-nb-text {\n        color: #737a87;\n    }\n\n    #termsfeed-com---nb .cc-nb-main-container {\n        border-top: 2px solid #a80232;\n        padding-top: 1rem;\n        padding-right: 2rem;\n        padding-bottom: 2rem;\n        padding-left: 6rem;\n    }\n    #termsfeed-com---nb .cc-nb-buttons-container [class^=\"cc-nb-\"] {\n        display: inline-block;\n        border-radius: 3px;\n        padding-left: 2rem;\n        padding-right: 2rem;\n        padding-top: 1rem;\n        padding-bottom: 1rem;\n        font-size: 0.8rem;\n        text-transform: uppercase;\n        line-height: 1.5;\n        color: rgba(255, 255, 255, 1);\n    }\n\n    #termsfeed-com---nb .cc-nb-okagree {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---nb .cc-nb-reject {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---nb .cc-nb-changep {\n        background-color: #252525;\n    }\n\n    #termsfeed-com---preferences-center .cc-cp-foot-save {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---preferences-center .cc-pc-container {\n        border-radius: 0.25rem;\n    }\n\n    #termsfeed-com---preferences-center .cc-pc-head {\n        border-radius: 0.25rem 0.25rem 0 0;\n    }\n\n    #termsfeed-com---preferences-center .cc-cp-foot {\n        border-radius: 0 0 0.25rem 0.25rem;\n    }\n</style>\n"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1644412708144",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "parentFolderId": "10",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "triggerId": "21",
+                "name": "Init lang Event",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "langInit"
+                            }
+                        ]
+                    }
+                ],
+                "filter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{DL lang Variable}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "NaN"
+                            },
+                            {
+                                "type": "BOOLEAN",
+                                "key": "negate",
+                                "value": "true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1643704108691",
+                "parentFolderId": "10"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "variableId": "14",
+                "name": "DL lang Variable",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "defaultValue",
+                        "value": "NaN"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "lang"
+                    }
+                ],
+                "fingerprint": "1643703872360",
+                "parentFolderId": "10",
+                "formatValue": {}
+            }
+        ],
+        "folder": [
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "folderId": "10",
+                "name": "cookiesconsent",
+                "fingerprint": "1643703786389"
+            }
+        ],
+        "fingerprint": "1646300505017",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2243251363/containers/8150954/versions/0?apiLink=version"
+    }
+}

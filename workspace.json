@@ -2,23 +2,6 @@
     "exportFormatVersion": 2,
     "exportTime": "2022-03-03 09:41:45",
     "containerVersion": {
-        "path": "accounts/2243251363/containers/8150954/versions/0",
-        "accountId": "2243251363",
-        "containerId": "8150954",
-        "containerVersionId": "0",
-        "container": {
-            "path": "accounts/2243251363/containers/8150954",
-            "accountId": "2243251363",
-            "containerId": "8150954",
-            "name": "www.portal.cz",
-            "publicId": "GTM-KK3GC67",
-            "usageContext": [
-                "WEB"
-            ],
-            "fingerprint": "1646053906269",
-            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/2243251363/containers/8150954/workspaces?apiLink=container",
-            "mode": "FULL"
-        },
         "tag": [
             {
                 "accountId": "2243251363",

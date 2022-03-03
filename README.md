@@ -10,7 +10,7 @@ vybereme workspace. "Merge" option. Zkontrolujeme zmeny a dame ulozit.
 
 Posledni vec bude zalozeni noveho tagu pro listu. 
 
-Ve sekce "Tags" zalozime novy tag. V configuration najdeme nasi sablonu. a trigering bude "Consent Initialization - All Pages". Dale potrebujeme propojit sablonu s nastavenim jazykove mutace. Dela se to tak ze klikneme na "tag configuration" v tam v inputu "automaticLang" vybereme  {{DL lang Variable}}
+Ve sekce "Tags" zalozime novy tag. V configuration najdeme nasi sablonu. a trigering bude "Init lang Event". Dale potrebujeme propojit sablonu s nastavenim jazykove mutace. Dela se to tak ze klikneme na "tag configuration" v tam v inputu "automaticLang" vybereme  {{DL lang Variable}}
 
 Lista je plne pripravena.
 

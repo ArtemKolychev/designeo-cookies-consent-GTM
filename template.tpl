@@ -40,8 +40,7 @@ ___TEMPLATE_PARAMETERS___
     "type": "TEXT",
     "name": "defaultLang",
     "displayName": "default lang",
-    "simpleValueType": true,
-    "defaultValue": "en"
+    "simpleValueType": true
   },
   {
     "type": "TEXT",

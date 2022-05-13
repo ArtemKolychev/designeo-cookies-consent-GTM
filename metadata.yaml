@@ -1,5 +1,5 @@
 homepage: "https://designeo.cz"
 documentation: "https://github.com/ArtemKolychev/designeo-cookies-consent-GTM"
 versions:
-  - sha: 291877069dd4c2069caf7517ff624dde447e3c73
+  - sha: c3634f238229c05f5504f47aeb804c5752c9d335
     changeNotes: init template

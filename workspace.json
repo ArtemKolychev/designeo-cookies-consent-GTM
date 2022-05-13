@@ -1,6 +1,6 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2022-03-03 09:41:45",
+    "exportTime": "2022-05-13 12:27:51",
     "containerVersion": {
         "tag": [
             {
@@ -24,37 +24,6 @@
                 "fingerprint": "1644412708145",
                 "firingTriggerId": [
                     "2147479553"
-                ],
-                "parentFolderId": "10",
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "2243251363",
-                "containerId": "8150954",
-                "tagId": "23",
-                "name": "css",
-                "type": "html",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "html",
-                        "value": "<style>\n\n    #termsfeed-com---nb {\n        position: fixed;\n        bottom: 0;\n        height: min-content;\n        margin-right: auto;\n        margin-left: auto;\n        padding-right: 0;\n        padding-left: 0;\n    }\n\n    #termsfeed-com---nb {\n        background-color: transparent;\n    }\n\n    #termsfeed-com---nb .cc-nb-main-container {\n        background-color: rgba(255, 255, 255, 1);\n\n        box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);\n        border-radius: 0.25rem;\n    }\n\n    .termsfeed-com---pc-dialog [type=checkbox] {\n        display: none;\n    }\n\n    #termsfeed-com---nb .cc-nb-title {\n        color: #252525;\n    }\n\n    #termsfeed-com---nb .cc-nb-text {\n        color: #737a87;\n    }\n\n    #termsfeed-com---nb .cc-nb-main-container {\n        border-top: 2px solid #a80232;\n        padding-top: 1rem;\n        padding-right: 2rem;\n        padding-bottom: 2rem;\n        padding-left: 6rem;\n    }\n    #termsfeed-com---nb .cc-nb-buttons-container [class^=\"cc-nb-\"] {\n        display: inline-block;\n        border-radius: 3px;\n        padding-left: 2rem;\n        padding-right: 2rem;\n        padding-top: 1rem;\n        padding-bottom: 1rem;\n        font-size: 0.8rem;\n        text-transform: uppercase;\n        line-height: 1.5;\n        color: rgba(255, 255, 255, 1);\n    }\n\n    #termsfeed-com---nb .cc-nb-okagree {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---nb .cc-nb-reject {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---nb .cc-nb-changep {\n        background-color: #252525;\n    }\n\n    #termsfeed-com---preferences-center .cc-cp-foot-save {\n        background-color: #1c976d;\n    }\n\n    #termsfeed-com---preferences-center .cc-pc-container {\n        border-radius: 0.25rem;\n    }\n\n    #termsfeed-com---preferences-center .cc-pc-head {\n        border-radius: 0.25rem 0.25rem 0 0;\n    }\n\n    #termsfeed-com---preferences-center .cc-cp-foot {\n        border-radius: 0 0 0.25rem 0.25rem;\n    }\n</style>\n"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "supportDocumentWrite",
-                        "value": "false"
-                    }
-                ],
-                "fingerprint": "1644412708144",
-                "firingTriggerId": [
-                    "2147479573"
                 ],
                 "parentFolderId": "10",
                 "tagFiringOption": "ONCE_PER_EVENT",
@@ -114,6 +83,71 @@
                 ],
                 "fingerprint": "1643704108691",
                 "parentFolderId": "10"
+            },
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "triggerId": "34",
+                "name": "tracking Trigger",
+                "type": "INIT",
+                "filter": [
+                    {
+                        "type": "CONTAINS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{cookie_consent_level}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "\"tracking\":true"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1646057915450"
+            },
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "triggerId": "35",
+                "name": "consent is visible",
+                "type": "ELEMENT_VISIBILITY",
+                "fingerprint": "1646058107051",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "elementId",
+                        "value": "termsfeed-com---nb"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useOnScreenDuration",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "useDomChangeListener",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "firingFrequency",
+                        "value": "MANY_PER_ELEMENT"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "selectorType",
+                        "value": "ID"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "onScreenRatio",
+                        "value": "50"
+                    }
+                ]
             }
         ],
         "variable": [
@@ -148,6 +182,28 @@
                 "fingerprint": "1643703872360",
                 "parentFolderId": "10",
                 "formatValue": {}
+            },
+            {
+                "accountId": "2243251363",
+                "containerId": "8150954",
+                "variableId": "33",
+                "name": "cookie_consent_level",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "true"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "cookie_consent_level"
+                    }
+                ],
+                "fingerprint": "1652444650776",
+                "parentFolderId": "10",
+                "formatValue": {}
             }
         ],
         "folder": [
@@ -158,8 +214,6 @@
                 "name": "cookiesconsent",
                 "fingerprint": "1643703786389"
             }
-        ],
-        "fingerprint": "1646300505017",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/2243251363/containers/8150954/versions/0?apiLink=version"
+        ]
     }
 }

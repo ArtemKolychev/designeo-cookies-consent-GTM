@@ -1,12 +1,4 @@
-﻿___TERMS_OF_SERVICE___
-
-By creating or modifying this file you agree to Google Tag Manager's Community
-Template Gallery Developer Terms of Service available at
-https://developers.google.com/tag-manager/gallery-tos (or such other URL as
-Google may provide), as modified from time to time.
-
-
-___INFO___
+﻿___INFO___
 
 {
   "type": "TAG",
@@ -16,10 +8,10 @@ ___INFO___
   "displayName": "Designeo cookiesConsent Template",
   "brand": {
     "id": "brand_dummy",
-    "displayName": "",
+    "displayName": "Designeo",
     "thumbnail": "data:image/jpeg;base64,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\u003d\u003d"
   },
-  "description": "",
+  "description": "https://github.com/ArtemKolychev/designeo-cookies-consent-GTM",
   "containerContexts": [
     "WEB"
   ]
@@ -119,7 +111,7 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "displayName": "personalization_storage",
-    "defaultValue": "personalization_storage"
+    "defaultValue": "denied"
   },
   {
     "type": "SELECT",
@@ -197,7 +189,7 @@ const getPolicyUrl = (actualLang) => {
 const getConfirmState = (storage, type) => {
   let isConfirm;
   if (storage[type] === undefined) {
-    isConfirm = data[type];
+    return "denied";
   } else {
     isConfirm = storage[type];
   }
@@ -221,10 +213,7 @@ setDefaultConsentState({
   security_storage: getConfirmState(storage, 'security_storage'),
 });
 
-
-var stringifiedData = JSON.stringify(data);
-
-  injectScript('https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js', () => {
+const onSuccess = () => {
     const lang = data.overideLang || data.automaticLang || data.defaultLang;
       callInWindow
     ('cookieconsent.run', {
@@ -240,7 +229,10 @@ var stringifiedData = JSON.stringify(data);
       "website_privacy_policy_url": getPolicyUrl(lang),
     });
 
-  });
+    data.gtmOnSuccess();
+};
+
+injectScript('https://www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js', onSuccess, data.gtmOnFailure);
 
 
 // Call data.gtmOnSuccess when the tag is finished.
@@ -579,5 +571,4 @@ scenarios: []
 ___NOTES___
 
 Created on 23.02.2022, 11:02:51
-
 

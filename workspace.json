@@ -146,7 +146,7 @@
                 "accountId": "2243251363",
                 "containerId": "8150954",
                 "triggerId": "34",
-                "name": "tracking Trigger",
+                "name": "consent privileges init",
                 "type": "CUSTOM_EVENT",
                 "customEventFilter": [
                     {

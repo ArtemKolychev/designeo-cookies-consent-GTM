@@ -93,7 +93,7 @@ ___TEMPLATE_PARAMETERS___
     ],
     "simpleValueType": true,
     "displayName": "ad_storage",
-    "defaultValue": "granted"
+    "defaultValue": "denied"
   },
   {
     "type": "SELECT",
@@ -170,6 +170,8 @@ const injectScript = require('injectScript');
 const setDefaultConsentState = require('setDefaultConsentState');
 const getCookieValues = require('getCookieValues');
 const JSON = require('JSON');
+const createQueue = require('createQueue');
+const dataLayerPush = createQueue('dataLayer');
 
 log('data =', data);
 
@@ -225,10 +227,10 @@ const onSuccess = () => {
       "page_load_consent_levels": ["strictly-necessary"],
       "notice_banner_reject_button_hide": false,
       "preferences_center_close_button_hide": false,
-      "page_refresh_confirmation_buttons": true,
+      "page_refresh_confirmation_buttons": false,
       "website_privacy_policy_url": getPolicyUrl(lang),
     });
-
+    dataLayerPush({'lang': lang});
     data.gtmOnSuccess();
 };
 
@@ -311,6 +313,45 @@ ___WEB_PERMISSIONS___
                   {
                     "type": 8,
                     "boolean": true
+                  }
+                ]
+              },
+              {
+                "type": 3,
+                "mapKey": [
+                  {
+                    "type": 1,
+                    "string": "key"
+                  },
+                  {
+                    "type": 1,
+                    "string": "read"
+                  },
+                  {
+                    "type": 1,
+                    "string": "write"
+                  },
+                  {
+                    "type": 1,
+                    "string": "execute"
+                  }
+                ],
+                "mapValue": [
+                  {
+                    "type": 1,
+                    "string": "dataLayer"
+                  },
+                  {
+                    "type": 8,
+                    "boolean": true
+                  },
+                  {
+                    "type": 8,
+                    "boolean": true
+                  },
+                  {
+                    "type": 8,
+                    "boolean": false
                   }
                 ]
               }

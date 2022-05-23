@@ -36,36 +36,6 @@
             {
                 "accountId": "2243251363",
                 "containerId": "8150954",
-                "tagId": "24",
-                "name": "cookie-consent",
-                "type": "html",
-                "parameter": [
-                    {
-                        "type": "TEMPLATE",
-                        "key": "html",
-                        "value": "<script type=\"text/javascript\" charset=\"UTF-8\">\n      if(lang === 'cs')document.querySelector('.termsfeed-com---lang-cs .cc-nb-changep').innerText = \"Nastavení cookies\";\n    if(lang === 'en')document.querySelector('.termsfeed-com---lang-en .cc-nb-changep').innerText = \"Cookie settings\";\n  document.getElementById('termsfeed-com---nb').classList.remove('termsfeed-com---nb-headline');\n</script>"
-                    },
-                    {
-                        "type": "BOOLEAN",
-                        "key": "supportDocumentWrite",
-                        "value": "false"
-                    }
-                ],
-                "fingerprint": "1646058118652",
-                "firingTriggerId": [
-                    "35"
-                ],
-                "tagFiringOption": "ONCE_PER_EVENT",
-                "monitoringMetadata": {
-                    "type": "MAP"
-                },
-                "consentSettings": {
-                    "consentStatus": "NOT_SET"
-                }
-            },
-            {
-                "accountId": "2243251363",
-                "containerId": "8150954",
                 "tagId": "40",
                 "name": "consentListener",
                 "type": "html",
@@ -95,6 +65,31 @@
             }
         ],
         "trigger": [
+        {
+                "accountId": "6006469056",
+                "containerId": "62591922",
+                "triggerId": "18",
+                "name": "tracking Trigger",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "consentInit"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1652775052676"
+            },
             {
                 "accountId": "2243251363",
                 "containerId": "8150954",
